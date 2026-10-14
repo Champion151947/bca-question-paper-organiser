@@ -1,0 +1,12 @@
+# Python 3.10+ (tested with 3.14)
+pymupdf>=1.24        # PDF text extraction + page rendering
+pandas>=2.0          # tabular output (CSV)
+scikit-learn>=1.3    # TF-IDF, cosine similarity, Logistic Regression
+pytesseract>=0.3.10  # OCR wrapper for scanned PDFs
+pillow>=10.0         # image handling for OCR
+joblib>=1.3          # model persistence
+
+# NOTE: pytesseract is only a wrapper. You must also install the Tesseract
+# OCR engine itself, e.g. on Windows:
+#   winget install --id UB-Mannheim.TesseractOCR -e
+# The pipeline auto-detects it in C:\Program Files\Tesseract-OCR\tesseract.exe
